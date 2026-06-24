@@ -1,0 +1,26 @@
+{
+  "YOUTUBE_OPTIONS": {
+    "youtube": {
+      "player_client": ["android", "web", "mweb"],
+      "player_skip": ["configs", "webpage"]
+    }
+  },
+  "SEARCH_OPTIONS": {
+    "format": "bestaudio/best",
+    "quiet": true,
+    "extract_flat": false,
+    "nocheckcertificate": true
+  },
+  "DOWNLOAD_OPTIONS": {
+    "format": "bestaudio/best[ext=m4a]/best",
+    "writethumbnail": true,
+    "max_filesize": 50000000,
+    "outtmpl": "%(title)s.%(ext)s",
+    "nocheckcertificate": true,
+    "postprocessors": [
+      { "key": "FFmpegExtractAudio", "preferredcodec": "mp3", "preferredquality": "192" },
+      { "key": "EmbedThumbnail" },
+      { "key": "FFmpegMetadata" }
+    ]
+  }
+}
