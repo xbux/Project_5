@@ -173,7 +173,7 @@ class MUSIC:
                 
     def start(self):
         os.system('cls')
-        TOKEN = "8709404197:AAGczUDoh5-ah1KQw1WL1crG3GTLoZSbGog"
+        TOKEN = "TELEGRAM TOKEN HERE"
         static_ffmpeg.add_paths()
         print("🚀 YouTube Carplay Bot\n")
         self.record = self.load_record()
